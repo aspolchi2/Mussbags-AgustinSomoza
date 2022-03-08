@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+.navBar ul{
+  display: flex;
+  list-style: none;
+  gap: 3rem
+  
+}
+.navBar ul a{
+  text-decoration: none;
+}
