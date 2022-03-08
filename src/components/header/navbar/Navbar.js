@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Home</a>
+                        <a className="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">Bolsos</a>
