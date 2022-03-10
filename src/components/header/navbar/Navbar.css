@@ -1,4 +1,9 @@
 .navbar{
     display: flex;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;    
+   
+}
+
+.navbar .fontStyle{
+    color: red;
 }

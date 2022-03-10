@@ -8,7 +8,7 @@ const Navbar = () => {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                <ul className="navbar-nav">
+                <ul className="navbar-nav fontStyle">
                     <li className="nav-item">
                         <a className="nav-link" aria-current="page" href="#">Home</a>
                     </li>
