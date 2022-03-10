@@ -1,0 +1,7 @@
+.cartLogo{
+    opacity: 0.5;
+}
+.cartLogo:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
