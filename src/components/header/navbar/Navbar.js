@@ -1,4 +1,5 @@
 import React from "react";
+import CartLogo from "../CartLogo/CartLogo";
 
 const Navbar = () => {
     return <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,6 +19,7 @@ const Navbar = () => {
                     <li className="nav-item">
                         <a className="nav-link" href="#">Carteras</a>
                     </li>
+                    <CartLogo />
                 </ul>
             </div>
         </div>
