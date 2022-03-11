@@ -1,13 +1,20 @@
-const ItemListContainer = () =>{
-    return (
-        <div>
-        <ul>
-            <li>Accesorios</li>
-            <li>Bolsos</li>
-            <li>Carteras</li>
-        </ul>
+const bolsos = [
+    {
+        title: 'AMOR',
+        src: './components/img/bolso_amor.img',
+        text: 'Bolso amor'
+    }
+]
 
-        </div>
+
+const ItemListContainer = () => {
+    return (
+       <div>
+           <ul>{bolsos.map((props) => {
+               <li>{props.text}</li>
+           })}</ul>
+       </div>
+
     )
 }
 

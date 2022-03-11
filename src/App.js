@@ -6,14 +6,14 @@ import ItemListContainer from './components/main/Main';
 
 function App() {
   return (
-    <body>
+    <div>
       <header className="header">
         <Navbar />
       </header>
       <main>
-       <ItemListContainer />
+        <ItemListContainer text={'hola'}/>
       </main>
-    </body>
+    </div>
   );
 }
 
