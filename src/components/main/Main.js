@@ -1,21 +1,14 @@
-const bolsos = [
-    {
-        title: 'AMOR',
-        src: './components/img/bolso_amor.img',
-        text: 'Bolso amor'
-    }
-]
+import Bolsos from "./bolsos/bolsos"
+import bolsoAmor from '../main/bolsos/bolso_amor.jpg'
 
 
-const ItemListContainer = () => {
+
+const Main = () => {
     return (
-       <div>
-           <ul>{bolsos.map((props) => {
-               <li>{props.text}</li>
-           })}</ul>
-       </div>
-
+        <main>
+            <Bolsos src={bolsoAmor} text ={'bolso amor'}/>
+        </main>
     )
 }
 
-export default ItemListContainer
+export default Main

@@ -1,18 +1,12 @@
 import './App.css';
-import Navbar from './components/header/navbar/Navbar';
-import ItemListContainer from './components/main/Main';
-
-
+import Header from './components/header/header';
+import Main from './components/main/Main';
 
 function App() {
   return (
     <div>
-      <header className="header">
-        <Navbar />
-      </header>
-      <main>
-        <ItemListContainer text={'hola'}/>
-      </main>
+     <Header />
+    <Main />
     </div>
   );
 }

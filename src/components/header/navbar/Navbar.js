@@ -11,13 +11,13 @@ const Navbar = () => {
             <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
                 <ul className="navbar-nav fontStyle">
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#Accesorios">Accesorios</a>
+                        <a className="nav-link" aria-current="page" href="#">Accesorios</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#Bolsos">Bolsos</a>
+                        <a className="nav-link" href="#">Bolsos</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#Carteras">Carteras</a>
+                        <a className="nav-link" href="#">Carteras</a>
                     </li>
                     <CartLogo />
                 </ul>
