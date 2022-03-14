@@ -1,5 +1,15 @@
-.navbar{
-    display: flex;
-    font-family: 'Roboto', serif;    
-   
+.navbar-collapse{
+    justify-self: flex-end;
+    flex-grow: unset;
+    
+}
+.me-auto{
+    margin: 0;
+    margin-right: 0 !important;
+    justify-self: flex-end;
+}
+.container{
+    max-width: 95%;
+    margin: auto;
+    padding: 0;
 }

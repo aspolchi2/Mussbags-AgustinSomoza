@@ -1,28 +1,27 @@
+
+
 import React from "react";
+import { Navbar,Nav,Container} from "react-bootstrap";
+
 import CartLogo from "../CartLogo/CartLogo";
 
-const Navbar = () => {
-    return <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
-            <a className="navbar-brand" href="#">MüssBags</a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                <ul className="navbar-nav fontStyle">
-                    <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Accesorios</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Bolsos</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Carteras</a>
-                    </li>
-                    <CartLogo />
-                </ul>
-            </div>
-        </div>
-    </nav>
-};
-export default Navbar
+
+const NavbarBoostrap = () =>{
+    return (
+        <Navbar bg="light" expand="lg">
+  <Container>
+    <Navbar.Brand href="#home">MÜSSBAGS</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link href="#Bolsos">Bolsos</Nav.Link>
+        <Nav.Link href="#Carteras">Carteras</Nav.Link>
+        <Nav.Link href="#Sale">Sale!</Nav.Link>
+        <CartLogo href='#Cart'/>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
+    )
+}
+export default NavbarBoostrap

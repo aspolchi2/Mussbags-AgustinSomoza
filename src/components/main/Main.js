@@ -1,4 +1,4 @@
-import Bolsos from "./bolsos/bolsos"
+import Bags from "./bolsos/Bolsos"
 import bolsoAmor from '../main/bolsos/bolso_amor.jpg'
 
 
@@ -6,7 +6,7 @@ import bolsoAmor from '../main/bolsos/bolso_amor.jpg'
 const Main = () => {
     return (
         <main>
-            <Bolsos src={bolsoAmor} text ={'bolso amor'}/>
+            <Bags src={bolsoAmor} text ='bolso amor'/>
         </main>
     )
 }
