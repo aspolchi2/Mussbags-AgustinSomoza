@@ -1,6 +1,7 @@
 .navbar-collapse{
     justify-self: flex-end;
     flex-grow: unset;
+    font-family: 'Roboto';
     
 }
 .me-auto{
@@ -12,4 +13,7 @@
     max-width: 95%;
     margin: auto;
     padding: 0;
+}
+.navbar-brand{
+    font-family: 'Montserrat';
 }

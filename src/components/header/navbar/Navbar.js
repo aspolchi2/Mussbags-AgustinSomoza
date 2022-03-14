@@ -10,14 +10,14 @@ const NavbarBoostrap = () =>{
     return (
         <Navbar bg="light" expand="lg">
   <Container>
-    <Navbar.Brand href="#home">MÜSSBAGS</Navbar.Brand>
+    <Navbar.Brand href="#home">Müssbags</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link href="#Bolsos">Bolsos</Nav.Link>
-        <Nav.Link href="#Carteras">Carteras</Nav.Link>
+        <Nav.Link href="#bags">Bolsos</Nav.Link>
+        <Nav.Link href="#purse">Carteras</Nav.Link>
         <Nav.Link href="#Sale">Sale!</Nav.Link>
-        <CartLogo href='#Cart'/>
+        <CartLogo />
       </Nav>
     </Navbar.Collapse>
   </Container>

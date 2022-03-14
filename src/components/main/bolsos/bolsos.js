@@ -1,4 +1,3 @@
-import Bolsoscss from './Bolsoscss.css'
 
 
 const Bags = (prop) => {
