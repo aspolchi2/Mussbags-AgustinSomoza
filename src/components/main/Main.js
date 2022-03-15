@@ -1,5 +1,5 @@
 import Bags from "./bolsos/Bolsos"
-import bolsoAmor from '../main/bolsos/bolso_amor.jpg'
+import bolsoAmor from '../main/bolsos/testing.webp'
 
 
 

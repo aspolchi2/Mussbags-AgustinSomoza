@@ -1,4 +1,4 @@
-
+@import '../addButton/AddButton.css';
 
 .bags{
     display: flex;
@@ -7,6 +7,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     font-family: 'Roboto';
+}
+
+.bags__footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 

@@ -1,0 +1,17 @@
+.addButton{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+
+.counter{
+    border: none;
+    background-color: transparent;
+    width: 3rem;
+
+}
