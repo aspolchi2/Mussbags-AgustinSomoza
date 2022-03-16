@@ -1,6 +1,6 @@
 import Bags from "./bolsos/Bolsos"
 import bolsoAmor from '../main/bolsos/testing.webp'
-
+import BolsosList from "./bolsos/BolsosList"
 
 
 const Main = () => {

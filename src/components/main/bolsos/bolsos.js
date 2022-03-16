@@ -23,7 +23,6 @@ const Bags = (prop) => {
             <footer className='bags__footer'>
                 <p className='bags__footer__p'>{prop.text}</p>
               <AddButton stock={5} initial={1} />
-               
             </footer>
         </article>
         

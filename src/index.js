@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './components/header/navbar/Navbar.css'
-import './components/header/CartLogo/CartLogo.css'
+
 
 ReactDOM.render(
   <React.StrictMode>
