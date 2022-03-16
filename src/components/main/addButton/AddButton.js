@@ -1,25 +1,24 @@
 import { useState } from "react"
 
-const ItemCount = (prop) => {
+const ItemCount = ({stock, initial}) => {
     //creamos hook 'useState'
-    const [count, setCount] = useState(prop.initial)
+    const [count, setCount] = useState(initial)
 
     const counter = (value) => {
         document.querySelector('.spanCount').classList.remove('wrong')
         //verificamos el valor de setCount 
         if (value === 'add') {
-            
             setCount(count + 1)
-            if (count >= prop.stock) {
+            if (count >= stock) {
                 //agrega una clase a 'spanCount' cuando 'count' sea igual o mayor al stock
                 document.querySelector('.spanCount').classList.add('wrong')
                 //Vuelve el valor de 'count' al maximo de stock
-                setCount(prop.stock)
+                setCount(stock)
             }
         } else {
             setCount(count - 1)
-            if (count <= prop.initial) {
-                setCount(prop.initial)
+            if (count <= initial) {
+                setCount(initial)
             }
         }
 

@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from "react"
 import AddButton from "../addButton/AddButton";
 
-
+const ItemStock = {
+    stock: 5,
+    initial: 1,
+}
 
 
 const Bags = ({src, name}) => {
@@ -22,7 +25,7 @@ const Bags = ({src, name}) => {
             </main>
             <footer className='bags__footer'>
                 <p className='bags__footer__p'>{name}</p>
-              <AddButton stock={5} initial={1} />
+              <AddButton stock={ItemStock.stock} initial={ItemStock.initial} />
             </footer>
         </article>
         
