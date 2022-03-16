@@ -2,3 +2,7 @@
     width: 80%;
     margin: auto;
 }
+.flex{
+    display: flex;
+    gap: 3rem;
+}

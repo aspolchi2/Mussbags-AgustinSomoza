@@ -12,7 +12,7 @@ const ItemCount = (prop) => {
             setCount(count + 1)
             if (count >= prop.stock) {
                 //agrega una clase a 'spanCount' cuando 'count' sea igual o mayor al stock
-                document.querySelector('.spanCount').classList.add('wrong')
+                document.querySelectorAll('.spanCount').classList.add('wrong')
                 //Vuelve el valor de 'count' al maximo de stock
                 setCount(prop.stock)
             }
