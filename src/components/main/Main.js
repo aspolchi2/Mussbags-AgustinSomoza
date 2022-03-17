@@ -1,4 +1,4 @@
-import ItemListContainer from "./bolsos/Bags"
+import ItemListContainer from "./bolsos/ItemListContainer"
 import Beige from './bolsos/beige.jpg'
 const prod = {
     url: Beige,
