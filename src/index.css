@@ -15,5 +15,4 @@ code {
 }
 @import "./components/main/Main.css";
 @import './components/header/navbar/Navbar.css';
-@import './components/main/bolsos/Bolsoscss.css';
-@import './components/header/CartLogo/CartLogo.css';
+@import './components/header/CartWidget/CartWidget.css';

@@ -3,7 +3,7 @@
 import React from "react";
 import { Navbar,Nav,Container} from "react-bootstrap";
 
-import CartLogo from "../CartLogo/CartLogo";
+import CartWidget from "../CartWidget/CartWidget";
 
 
 const NavbarBoostrap = () =>{
@@ -17,7 +17,7 @@ const NavbarBoostrap = () =>{
         <Nav.Link href="#bags">Bolsos</Nav.Link>
         <Nav.Link href="#purse">Carteras</Nav.Link>
         <Nav.Link href="#Sale">Sale!</Nav.Link>
-        <CartLogo />
+        <CartWidget />
       </Nav>
     </Navbar.Collapse>
   </Container>
