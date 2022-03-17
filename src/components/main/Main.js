@@ -15,7 +15,7 @@ const BagsList = [{
 },
 {
     name: 'Gif',
-    id: 2,
+    id: 3,
     url: Gif
 }]
 
@@ -23,13 +23,13 @@ const BagsList = [{
 const Main = () => {
     return (
         <main className="main">
-        <div className="flex">
-           {
-            BagsList.map((prod) => (
-                    <Bags src={prod.url} name={prod.name}/>
-                ))
-           } 
-           </div>
+            <div className="flex">
+                {
+                    BagsList.map(prod =>
+                        <Bags src={prod.url} name={prod.name} key={prod.id}/>
+                    )
+                }
+            </div>
 
         </main>
     )

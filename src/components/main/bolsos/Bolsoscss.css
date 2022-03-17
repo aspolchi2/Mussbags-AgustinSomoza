@@ -12,6 +12,7 @@
 }
 .bags img{
     width: 300px;
+    border-radius: 5px;
 }
 
 .bags__footer{
