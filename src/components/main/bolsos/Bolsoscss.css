@@ -1,12 +1,17 @@
 @import '../addButton/AddButton.css';
 
 .bags{
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     font-family: 'Roboto';
+    
+}
+.bags img{
+    width: 300px;
 }
 
 .bags__footer{
