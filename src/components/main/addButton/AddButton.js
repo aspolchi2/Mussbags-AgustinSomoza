@@ -4,7 +4,7 @@ const ItemCount = ({stock, initial}) => {
     //creamos hook 'useState'
     const [count, setCount] = useState(initial)
 
-    const counter = (value) => {
+    const Counter = (value) => {
         document.querySelector('.spanCount').classList.remove('wrong')
         //verificamos el valor de setCount 
         if (value === 'add') {
@@ -28,15 +28,15 @@ const ItemCount = ({stock, initial}) => {
 
 
     }
-    const onAdd = () => {
+    const OnAdd = () => {
         alert(`agregaste ${count} al carrito`)
     }
     return (
         <div className="addButton">
-            <button className='counter' onClick={() => counter('add')}>+</button>
+            <button className='counter' onClick={() => Counter('add')}>+</button>
             <span className="spanCount">{count}</span>
-            <button className='counter' onClick={() => counter()}>-</button>
-            <button className="counter" onClick={() => onAdd()}>Buy</button>
+            <button className='counter' onClick={() => Counter()}>-</button>
+            <button className="counter" onClick={() => OnAdd()}>Buy</button>
         </div>
     )
 

@@ -1,23 +1,22 @@
 import Bags from "./bolsos/Bolsos"
-import bolsoAmor from '../main/bolsos/testing.webp'
-import blacki from '../main/bolsos/blacki.jpg';
-import beige from '../main/bolsos/beige.jpg'
-import gif from '../main/bolsos/testing.webp'
+import Blacki from '../main/bolsos/blacki.jpg';
+import Beige from '../main/bolsos/beige.jpg'
+import Gif from '../main/bolsos/testing.webp'
 
 const BolsosList = [{
-    name: 'blacky',
+    name: 'Blacky',
     id: 1,
-    url: blacki
+    url: Blacki
 },
 {
-    name: 'beige',
+    name: 'Beige',
     id: 2,
-    url: beige
+    url: Beige
 },
 {
-    name: 'gif',
+    name: 'Gif',
     id: 2,
-    url: gif
+    url: Gif
 }]
 
 
