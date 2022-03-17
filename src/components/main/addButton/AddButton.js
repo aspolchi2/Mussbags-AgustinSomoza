@@ -22,6 +22,7 @@ const ItemCount = ({stock, initial, OnAdd}) => {
             if (count <= initial) {
                 setCount(initial)
             }
+            
         }
     
 
