@@ -1,9 +1,9 @@
-import Bags from "./bolsos/Bolsos"
+import Bags from "./bolsos/Bags"
 import Blacki from '../main/bolsos/blacki.jpg';
 import Beige from '../main/bolsos/beige.jpg'
 import Gif from '../main/bolsos/testing.webp'
 
-const BolsosList = [{
+const BagsList = [{
     name: 'Blacky',
     id: 1,
     url: Blacki
@@ -25,7 +25,7 @@ const Main = () => {
         <main className="main">
         <div className="flex">
            {
-                BolsosList.map((prod) => (
+            BagsList.map((prod) => (
                     <Bags src={prod.url} name={prod.name}/>
                 ))
            } 
