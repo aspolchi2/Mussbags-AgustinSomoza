@@ -1,7 +1,7 @@
 import NavbarBoostrap from "./navbar/Navbar"
 
 const Header = () => {
-    return <header>
+    return <header className="header">
         <NavbarBoostrap />
     </header>
 }

@@ -16,4 +16,5 @@ code {
 @import "./components/main/Main.css";
 @import './components/header/navbar/Navbar.css';
 @import './components/header/CartWidget/CartWidget.css';
-@import './components/main/ItemCount/ItemCount.css'
+@import './components/main/ItemCount/ItemCount.css';
+@import './components/header/Header.css';

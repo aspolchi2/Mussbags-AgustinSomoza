@@ -5,9 +5,15 @@
 .main{
     width: 80%;
     margin: auto;
+    position: relative;
+    top: 8.5vh;
+    
 }
 .flex{
     display: flex;
     gap: 3rem;
+    justify-content: center;
+    align-items: flex-end;
+    
     
 }

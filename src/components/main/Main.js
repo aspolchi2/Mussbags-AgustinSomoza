@@ -1,16 +1,17 @@
 import ItemListContainer from "./ItemListContainer/ItemListContainer"
-import Beige from '../main/ItemListContainer/beige.jpg'
-const prod = {
-    url: Beige,
-    name: 'Beige',
-    id: 1
-}
+import ItemList from './ItemList/ItemList.js'
+
 
 const Main = () => {
     return (
-        <main className="main">
-            <div className="flex">
-                <ItemListContainer src={prod.url} name={prod.name} key={prod.id} />
+        <main className="main container">
+            <div className="flex row col-12">
+                {
+                    ItemList.map((item) => (
+                        <ItemListContainer src={item.url} name={item.name} key={item.id} />
+                    ))
+                }
+
             </div>
 
         </main>
