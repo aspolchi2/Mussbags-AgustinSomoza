@@ -1,5 +1,5 @@
 import ItemListContainer from "./ItemListContainer/ItemListContainer"
-import Beige from './bolsos/beige.jpg'
+import Beige from '../main/ItemListContainer/beige.jpg'
 const prod = {
     url: Beige,
     name: 'Beige',

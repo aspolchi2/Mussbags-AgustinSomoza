@@ -3,7 +3,7 @@
 import React from "react";
 import { Navbar,Nav,Container} from "react-bootstrap";
 
-import CartWidget from "../CartWidget/CartWidget";
+import CartWidget from '../CartWidget/CartWidget.js'
 
 
 const NavbarBoostrap = () =>{
