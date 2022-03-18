@@ -1,16 +1,10 @@
 import ItemListContainer from "./ItemListContainer/ItemListContainer"
 import Beige from '../main/ItemListContainer/beige.jpg'
-import ItemCount from "./ItemCount/ItemCount"
 const prod = {
     url: Beige,
     name: 'Beige',
     id: 1
 }
-const ItemStock = {
-    stock: 5,
-    initial: 1,
-}
-
 
 const Main = () => {
     return (
