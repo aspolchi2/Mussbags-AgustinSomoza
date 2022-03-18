@@ -33,7 +33,9 @@ const ItemCount = ({stock, initial, OnAdd}) => {
 
     }
     const AddToCart = ()=>{
-       OnAdd(count)
+        const StockLeft = stock - count
+       OnAdd(count, StockLeft)
+
     }
    
     return (

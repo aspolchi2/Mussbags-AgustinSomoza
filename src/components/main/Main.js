@@ -17,7 +17,6 @@ const Main = () => {
         <main className="main">
             <div className="flex">
                 <ItemListContainer src={prod.url} name={prod.name} key={prod.id} />
-                <ItemCount stock={ItemStock.stock} initial={ItemStock.initial} />
             </div>
 
         </main>

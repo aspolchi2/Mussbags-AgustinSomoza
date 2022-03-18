@@ -1,9 +1,14 @@
 import React, {useState, useEffect} from "react"
+import ItemCount from "../ItemCount/ItemCount"
 
 const ItemStock = {
     stock: 5,
     initial: 1,
 }
+const OnAdd = (HowMany, StockLeft) =>{
+    alert(`Agregaste ${HowMany} quedan ${StockLeft}`)
+}
+
 
 const ItemListContainer = ({name, src}) =>{
 
@@ -15,6 +20,7 @@ const ItemListContainer = ({name, src}) =>{
             <footer className='bags__footer'>
                 <p className='bags__footer__p'>{name}</p>
             </footer>
+            <ItemCount stock={ItemStock.stock} initial={ItemStock.initial} OnAdd={OnAdd} />
         </article>
         
     )
