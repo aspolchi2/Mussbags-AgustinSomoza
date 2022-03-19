@@ -3,7 +3,7 @@ import ItemCount from "../ItemCount/ItemCount"
 
 const ItemStock = {
     stock: 5,
-    initial: 1,
+    initial: 0,
 }
 const OnAdd = (HowMany, StockLeft) => {
     alert(`Agregaste ${HowMany} quedan ${StockLeft}`)
