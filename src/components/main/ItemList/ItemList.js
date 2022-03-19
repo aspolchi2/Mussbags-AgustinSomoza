@@ -5,19 +5,31 @@ import Gif from './gif.webp'
 
 
 const ItemList = [{
+    id: 1,
     url: Beige,
     name: 'Beige',
-    id: 1
+    price: 4699,
+    desc: 'es un bolso'
+
 },
 {
+    id: 2,
     url: Gif,
     name: 'Gif',
-    id: 2
+    price: 4599,
+    desc: 'es un bolso'
+
 },
 {
+    id: 3,
     url: Blackie,
     name: 'Blackie',
-    id: 3
+    price: 4399,
+    desc: 'es un bolso'
+
 }]
+
+
+
 
 export default ItemList

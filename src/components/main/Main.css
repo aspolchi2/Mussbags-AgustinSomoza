@@ -1,5 +1,11 @@
 @import './ItemListContainer/ItemListContainer.css';
 
+:root{
+    --detail-color: #F5B6EC;
+    --background-color: #ffff;
+
+    
+}
 
 
 .main{

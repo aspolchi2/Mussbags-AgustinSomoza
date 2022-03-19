@@ -7,12 +7,24 @@
     flex-direction: column;
     flex-wrap: wrap;
     font-family: 'Roboto';
+    gap: 0.3rem;
+    position: relative;
     
 }
-.bags img{
-    width: 300px;
-    border-radius: 5px;
+.bags__img{
+position: relative;
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
 }
+.bags__img img{
+width: 21.96vw;
+border-radius: 10px;
+position: relative;
+
+
+}
+
 
 .bags__footer{
     width: 100%;

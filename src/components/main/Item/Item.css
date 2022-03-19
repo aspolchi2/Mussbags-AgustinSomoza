@@ -1,0 +1,5 @@
+.Item{
+    position: absolute;
+    color: var(--detail-color);
+    margin-right: 0.2rem;
+}

@@ -11,8 +11,8 @@ const Main = () => {
                         <ItemListContainer src={item.url} name={item.name} key={item.id} />
                     ))
                 }
-
             </div>
+
 
         </main>
     )
