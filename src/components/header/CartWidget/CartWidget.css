@@ -1,5 +1,9 @@
+
 .cartLogo{
-    opacity: 0.5;
+    color: var(--detail-color);
+  vertical-align: top;
+  position: relative;
+  bottom: 3px;
 }
 .cartLogo:hover{
     opacity: .7;
