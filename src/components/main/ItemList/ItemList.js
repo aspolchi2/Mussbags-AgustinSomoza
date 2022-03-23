@@ -29,6 +29,15 @@ const ItemList = [{
 
 }]
 
+export const getStock =  new Promise((resolve, reject) => {
+        if (ItemList.length === 0) {
+            reject(new Error('No hay datos'))
+        }
+        setTimeout(() => {
+            resolve(ItemList);
+        }, 2000)
+    })
+
 
 
 
