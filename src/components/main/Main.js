@@ -1,6 +1,8 @@
 import ItemListContainer from "./ItemListContainer/ItemListContainer"
 import { useState, useEffect } from "react"
 import { getStock } from "./ItemList/ItemList.js"
+import { ItemDetailContainer } from "./ItemDetailContainer/ItemDetailContainer"
+import { ItemDetail } from "./ItemDetail/ItemDetail"
 
 
 
@@ -9,8 +11,8 @@ const Main = () => {
 
     useEffect(() => {
         getStock
-        .then((res) => res.map((item) =>( 
-            <ItemListContainer src={item.url} name={item.name} key={item.id} />
+        .then((res) => res.map((item, i) =>( 
+            <ItemListContainer url={item.url} name={item.name} id={item.id} key={i}/>
         )))
         .then((data) => setItems(data))
         .catch((err) => console.log(err))
@@ -22,10 +24,10 @@ const Main = () => {
                 {
                     items
                 }
-                
             </div>
 
-
+            <ItemDetailContainer/>
+            <ItemDetail/>
         </main>
     )
 }
