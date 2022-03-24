@@ -9,12 +9,12 @@ import Main from '../Main'
 
 export const ItemDetailContainer = ({ id }) => {
     const [first, setfirst] = useState(id)
-    const [second, setSecond] = useState([])
     useEffect(() => {
 
         getStock
-            .then(res => { res.find((r)=>r.id === 1)})
-            .then(data => console.log(data))
+            .then(res => { res.find((r)=>r.id === 1 ) })
+            .then(data => { setfirst(data) })
+            .catch(err => console.log(err))
 
     }, [])
 

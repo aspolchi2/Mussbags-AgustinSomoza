@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { getStock } from '../ItemList/ItemList';
+import { Card } from 'react-bootstrap';
 
 export const Clicked =(id)=>{
     console.log(id);
@@ -6,16 +8,16 @@ export const Clicked =(id)=>{
 }
 
 export const ItemDetail = ({id}) => {
-    const [first, setfirst] = useState(id)
+    const [item, setItem] = useState([])  
     useEffect(() => {
-      const g = setfirst(id)
-    
-      return () => {
-       console.log(g);
-      }
+        getStock
+        .then((res) => res.find((r)=>r.id === Number(id)))
+        .then((data) => setItem(data))
+        .catch((err) => console.log(err))
+        console.log(item);
     }, [])
-    
   return (
-    <div><h1>{first}</h1></div>
+    <div ><h1>{item}</h1></div>
+
   )
 }
