@@ -2,7 +2,7 @@ import ItemListContainer from "./ItemListContainer/ItemListContainer"
 import { useState, useEffect } from "react"
 import { getStock } from "./ItemList/ItemList.js"
 import { ItemDetailContainer } from "./ItemDetailContainer/ItemDetailContainer"
-import { ItemDetail } from "./ItemDetail/ItemDetail"
+import { Clicked, ItemDetail } from "./ItemDetail/ItemDetail"
 
 
 
@@ -11,9 +11,6 @@ const Main = () => {
 
     useEffect(() => {
         getStock
-        .then((res) => res.map((item, i) =>( 
-            <ItemListContainer url={item.url} name={item.name} id={item.id} key={i}/>
-        )))
         .then((data) => setItems(data))
         .catch((err) => console.log(err))
     }, [])
@@ -22,12 +19,15 @@ const Main = () => {
         <main className="main container">
             <div className="flex row col-12">
                 {
-                    items
+                    items.map((res, i) =>  <ItemListContainer url={res.url} name={res.name} id={res.id} key={i}/>)
+                   
                 }
             </div>
-
-            <ItemDetailContainer/>
-            <ItemDetail/>
+            <div className="flex row col-3">
+                {
+                   Clicked ?  <ItemDetail id={Clicked}/> : null
+                }
+           </div>
         </main>
     )
 }

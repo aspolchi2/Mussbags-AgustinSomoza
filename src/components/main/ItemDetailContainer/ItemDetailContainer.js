@@ -7,7 +7,7 @@ import Main from '../Main'
 
 
 
-export const ItemDetailContainer = ({ id }) => {
+export const ItemDetailContainer = ({ id, name, price, desc, url }) => {
     const [first, setfirst] = useState(id)
     useEffect(() => {
 
@@ -22,13 +22,13 @@ export const ItemDetailContainer = ({ id }) => {
 
     return (
         <div className='bsCard'><Card className="bg-dark text-white">
-            <Card.Img src='' alt="Card image" />
+            <Card.Img src={url} alt="Card image" />
             <Card.ImgOverlay>
-                <Card.Title>''</Card.Title>
+                <Card.Title>{name}</Card.Title>
                 <Card.Text>
-                    ''
+                    {desc}
                 </Card.Text>
-                <Card.Text>''</Card.Text>
+                <Card.Text>{price}</Card.Text>
             </Card.ImgOverlay>
         </Card></div>
     )
