@@ -5,7 +5,7 @@ import Gif from './gif.webp'
 
 
 const ItemList = [{
-    id: 1,
+    id: "1",
     url: Beige,
     name: 'Beige',
     price: 4699,
@@ -13,7 +13,7 @@ const ItemList = [{
 
 },
 {
-    id: 2,
+    id: "2",
     url: Gif,
     name: 'Gif',
     price: 4599,
@@ -21,7 +21,7 @@ const ItemList = [{
 
 },
 {
-    id: 3,
+    id: "3",
     url: Blackie,
     name: 'Blackie',
     price: 4399,

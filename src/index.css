@@ -18,4 +18,5 @@ code {
 @import './components/header/CartWidget/CartWidget.css';
 @import './components/main/ItemCount/ItemCount.css';
 @import './components/header/Header.css';
-@import './components/main/Item/Item.css'
+@import './components/main/Item/Item.css';
+@import './components/main/ItemDetailContainer/ItemDetailContainer.css'
