@@ -1,8 +1,8 @@
 import ItemListContainer from "./ItemListContainer/ItemListContainer"
 import { useState, useEffect } from "react"
 import { getStock } from "./ItemList/ItemList.js"
-import { ItemDetailContainer } from "./ItemDetailContainer/ItemDetailContainer"
 import { Clicked, ItemDetail } from "./ItemDetail/ItemDetail"
+import Neweeer from "./new/Newer"
 
 
 
@@ -28,6 +28,7 @@ const Main = () => {
                    Clicked ?  <ItemDetail id={Clicked}/> : null
                 }
            </div>
+           {/* <Neweeer/> */}
         </main>
     )
 }

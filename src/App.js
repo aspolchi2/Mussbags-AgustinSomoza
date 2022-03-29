@@ -2,7 +2,6 @@ import './App.css';
 import Header from './components/header/Header';
 import Main from './components/main/Main';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { ItemDetail } from './components/main/ItemDetail/ItemDetail';
 
 function App() {
   return (
