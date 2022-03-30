@@ -2,7 +2,6 @@ import ItemListContainer from "./ItemListContainer/ItemListContainer"
 import { useState, useEffect } from "react"
 import { getStock } from "./ItemList/ItemList.js"
 import { Clicked, ItemDetail } from "./ItemDetail/ItemDetail"
-import Neweeer from "./new/Newer"
 
 
 
@@ -19,7 +18,8 @@ const Main = () => {
         <main className="main container">
             <div className="flex row col-12">
                 {
-                    items.map((res, i) =>  <ItemListContainer url={res.url} name={res.name} id={res.id} key={i}/>)
+                    items.map((res, i) => 
+                     <ItemListContainer url={res.url} name={res.name} id={res.id} key={i}/>)
                    
                 }
             </div>
@@ -28,7 +28,6 @@ const Main = () => {
                    Clicked ?  <ItemDetail id={Clicked}/> : null
                 }
            </div>
-           {/* <Neweeer/> */}
         </main>
     )
 }
